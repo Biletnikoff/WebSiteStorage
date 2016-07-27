@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body id="app">
+  <div id="ui">
+    Enter a URL here:
+    <form  id='url'>
+      <input type="input" name="url" id='inputForm'></input>
+      <input type="submit" value="submit" >
+    </form>
+    Enter a Job ID here:
+    <form id="jobid">
+      <input type="input" name="id" id='jobInput'></input>
+      <input type="submit" value="submit" >
+    </form>
+  </div>
+  <p id="status"></p>
+  <div id='result'></div>
+
+</body>
+<script src='httpRequest.js'>
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+</html>
