@@ -21,9 +21,7 @@ Queue.prototype.push = function (data) {
 // creates tasks to push jobs to redis
 Queue.prototype.createTasks = function (url, content, numberOfTasks) {
   var job = [this.jobID, url];
-  // pushes to redis
   this.push(JSON.stringify(job));
-
 }
 
 // downloads html from requested website

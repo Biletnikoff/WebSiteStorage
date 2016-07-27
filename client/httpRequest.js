@@ -13,7 +13,7 @@ url.addEventListener("submit", function(evt) {
       url: 'http://localhost:8080/submitredis',
       data: {url: inputForm.value},
       success: function (jobId) {
-        alert("The Job ID for " + inputForm.value+ " is " + jobId + ".");
+        alert(`The Job ID for ${inputForm.value} is ${jobId}`);
       },
       error: function (error) {
         console.log('error in clientside post request to newWebsite endpoint', error);
