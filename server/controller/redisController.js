@@ -32,7 +32,7 @@ var retrieveJobPosition = function(id, callback) {
   var queuePosition = null;
   redis.llen(jobQueue.key, function(err, reply){
     if (err) {
-      return "There was an error finding the length of the jobsQueue " + err;
+      return `There was an error finding the length of the job queue ${err}` ;
     }
     redis.lrange(jobQueue.key, 0, reply, function(err, replies){
       if (replies) {
