@@ -20,5 +20,6 @@ redis-server
 ```
 
 #### Run Locally
-
-'npm start'
+```sh
+npm start
+```
